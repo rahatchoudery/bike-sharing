@@ -1,1 +1,1 @@
-# BikeSharing
+# bike-sharing
