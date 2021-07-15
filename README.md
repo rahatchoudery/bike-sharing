@@ -4,14 +4,14 @@
 In a matter of a few years, bike sharing has become an increasingly popular service for several reasons. Not only is it a fast, convenient, and eco-friendly transportation option for city residents, but it is also a low-cost and fun option for tourists. Despite how popular this service has become, there are various opportunities to streamline the rental process and improve user experience. This starts by addressing common issues (bike build-up at certain docks, lack of user guidance, uneven bike traffic, etc.) and brainstorming potential solutions, which I explored through the analysis of given data.
 
 ## Data
-![ER Diagram]()
+![ER Diagram](https://github.com/rahatchoudery/bike-sharing/blob/cbf56c42dfab8ff03cf75449ae6240acda19a9cc/ER_Diagram.png)
 
 The ER Diagram pictured above outlines the design of the database. As represented in the image:
 - one user can have many trips, but a trip can be assigned to only one user,
 - one station can have many trips, but a trip can only be assigned one start and end station, 
 - one bike can have many trips, but each trip can only be taken on one bike.  
 
-Data was sourced from [Citi Bike NYC](https://www.citibikenyc.com/system-data) and manually broken in four databases: Trip Info, User Info, Bike Info, and Station Info ()
+Data was sourced from [Citi Bike NYC](https://www.citibikenyc.com/system-data) and manually broken in four databases: Trip Info, User Info, Bike Info, and Station Info
 
 ## Queries
 - [Total Seconds a Bike Has Been Ridden](https://github.com/rahatchoudery/bike-sharing/blob/b786232879e29e0346a86ca5fa635c2ddf3c3341/bikeSharing.sql#L12)
