@@ -11,7 +11,51 @@ The ER Diagram pictured above outlines the design of the database. As represente
 - one station can have many trips, but a trip can only be assigned one start and end station, 
 - one bike can have many trips, but each trip can only be taken on one bike.  
 
-Data was sourced from [Citi Bike NYC](https://www.citibikenyc.com/system-data) and manually broken in four databases: Trip Info, User Info, Bike Info, and Station Info
+Data was sourced from [Citi Bike NYC](https://www.citibikenyc.com/system-data) and manually broken in four databases:  
+
+Trip Info
+```
+TripInfo (
+    TripID int,
+    UserID int,
+    BikeID int,
+    TripDate date,
+    StartTime time,
+    StopTime time,
+    TripDuration int,
+    StartStationID int,
+    EndStationID int
+);
+```
+
+User Info
+```
+UserInfo (
+    UserID int,
+    UserType varchar(45),
+    Gender varchar(45),
+    BirthYear int,
+    State/Region varchar(45),
+    Country varchar(45)
+);
+```
+
+Bike Info
+``` 
+BikeInfo (
+    BikeID int,
+    BikeType varchar(45),
+    LocatedID int
+);
+``` 
+Station Info
+```
+StationInfo (
+    StationID int,
+    StationName varchar(45),
+    MaxStorage int
+);
+```
 
 ## Queries
 - [Total Seconds a Bike Has Been Ridden](https://github.com/rahatchoudery/bike-sharing/blob/b786232879e29e0346a86ca5fa635c2ddf3c3341/bikeSharing.sql#L12)
